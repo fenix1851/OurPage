@@ -1,0 +1,151 @@
+.hero
+    &-section
+        margin-top: 169px
+    &-title
+        width: 470px
+        height: 129px
+        color: #ffffff
+        font-family: "Uni Neue"
+        font-size: 66px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 70.45px
+        position: relative
+        &::after
+            content: ''
+            width: 75px
+            height: 39px
+            background-image: url(../img/hero/key.png)
+            display: block
+            position: absolute
+            bottom: -1px
+            right: 94px
+    &-subtitle
+        margin-top: 56px
+        width: 639px
+        height: 77px
+        color: #ffffff
+        font-family: "Uni Neue"
+        font-size: 23px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 27px
+    &-buttons
+        margin-top: 61px
+        height: 80px
+        display: flex
+        justify-content: space-between
+        width: 680px
+        position: relative
+        border-style: none
+        box-shadow: none
+        border: 2px solid #283034
+        border-radius: 18px
+        &>label>a
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: -999999
+        &>input
+            position: absolute
+            opacity: 0
+        &>label
+            -moz-transition: 0.2s 0.2s ease-in
+            -o-transition: 0.2s 0.2s ease-in
+            -webkit-transition: 0.2s 0.2s ease-in
+        &__calculate
+            width: 321px
+            height: 80px
+            display: flex
+            align-items: center
+            background-color: transparent
+            justify-content: center
+            font-family: "Uni Neue"
+            color: #ffffff
+            font-size: 16px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: 18.43px
+            border-style: none
+            text-transform: uppercase
+            position: absolute
+            bottom: -2px
+            left: 0
+            border-radius: 18px
+            &_input
+                &:checked
+                    & + label
+                        box-shadow: none
+                        background-color: #fff2f6
+                        color: #071544
+                        width: 354px
+                        z-index: 0
+                        & > a
+                            z-index: 1000
+        &__call
+            position: absolute
+            right: 0
+            bottom: -2px
+            width: 321px
+            height: 80px
+            // border-radius: 18px
+            //     -webkit-transition-property: none
+            // border-bottom-left-radius: 0
+            // border-top-left-radius: 0
+            // border: 2px solid #283034
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: transparent
+            color: #ffffff
+            font-family: "Uni Neue"
+            font-size: 16px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: 18.43px
+            text-align: left
+            text-transform: uppercase
+            border-style: none
+            border-radius: 18px
+            &_input
+                &:checked
+                    & + label
+                        width: 354px
+                        box-shadow: none
+                        background-color: #fff2f6
+                        color: #071544
+                        border-bottom-left-radius: 18px
+                        border-top-left-radius: 18px
+                        z-index: 0
+                        & > a
+                            z-index: 1000
+    &-icons    
+        margin-top: 153px
+        max-width: 926px
+        height: 126px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-icon
+            display: flex
+            align-items: center
+            &__text
+                color: #fff2f6
+                font-family: "Uni Neue"
+                font-size: 16px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 24px
+                text-align: left
+                text-transform: uppercase
+                margin-left: 19px
+                max-width: 123px
+                &:nth-child(2)
+                    max-width: 130px
+                    white-space: break-spaces
+

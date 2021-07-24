@@ -1,0 +1,61 @@
+.header
+    margin-top: 128px
+    &-navbar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-links
+            width: 655px
+            display: flex
+            justify-content: space-between
+            &__link
+                color: #fff
+                font-size: 18px
+                font-family: "Uni Neue"
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 50.95px
+                text-decoration: none
+                -moz-transition: 0.2s 0.1s ease-in
+                -o-transition: 0.2s 0.1s ease-in
+                -webkit-transition: 0.2s 0.1s ease-in
+                transition-duration: 0.2s
+                &:hover
+                    text-shadow: 0 0 1.05px #fff, 0 0 1.05px #fff
+        &-telephone
+            position: relative
+            &__telephone
+                letter-spacing: 0.08px
+                font-size: 20px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 21.59px
+                font-family: "Uni Neue"
+                color: white
+                text-decoration: none
+            &::after
+                content: ''
+                width: 36px
+                height: 36px
+                background-image: url('../img/header/online.svg')
+                display: block
+                position: absolute
+                left: -46px
+                top: -7px
+            &::before
+                content: 'Online'
+                opacity: 0.33
+                color: #fff2f6
+                font-family: "Uni Neue"
+                font-size: 16px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 24px
+                display: block
+                position: absolute
+                left: -103px
+                top: -2px
+                
