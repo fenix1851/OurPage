@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Uni Neue";
+  src: local("Uni Neue Bold"), local("Uni-Neue-Bold"), url("../fonts/UniNeueBold.woff2") format("woff2"), url("../fonts/UniNeueBold.woff") format("woff"), url("../fonts/UniNeueBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Uni Neue";
+  src: local("Uni Neue Book"), local("Uni-Neue-Book"), url("../fonts/UniNeueBook.woff2") format("woff2"), url("../fonts/UniNeueBook.woff") format("woff"), url("../fonts/UniNeueBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Uni Neue";
+  src: local("Uni Neue Regular"), local("Uni-Neue-Regular"), url("../fonts/UniNeueRegular.woff2") format("woff2"), url("../fonts/UniNeueRegular.woff") format("woff"), url("../fonts/UniNeueRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  -moz-transition: 0.2s 0.1s ease-in;
+  -o-transition: 0.2s 0.1s ease-in;
+  -webkit-transition: 0.2s 0.1s ease-in;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: #0e161b;
+}
+
+.container {
+  max-width: 1273px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 128px;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navbar-links {
+  width: 655px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navbar-links__link {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Uni Neue";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 50.95px;
+  text-decoration: none;
+  -moz-transition: 0.2s 0.1s ease-in;
+  -o-transition: 0.2s 0.1s ease-in;
+  -webkit-transition: 0.2s 0.1s ease-in;
+  transition-duration: 0.2s;
+}
+
+.header-navbar-links__link:hover {
+  text-shadow: 0 0 1.05px #fff, 0 0 1.05px #fff;
+}
+
+.header-navbar-telephone {
+  position: relative;
+}
+
+.header-navbar-telephone__telephone {
+  letter-spacing: 0.08px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21.59px;
+  font-family: "Uni Neue";
+  color: white;
+  text-decoration: none;
+}
+
+.header-navbar-telephone::after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/header/online.svg");
+  display: block;
+  position: absolute;
+  left: -46px;
+  top: -7px;
+}
+
+.header-navbar-telephone::before {
+  content: "Online";
+  opacity: 0.33;
+  color: #fff2f6;
+  font-family: "Uni Neue";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  display: block;
+  position: absolute;
+  left: -103px;
+  top: -2px;
+}
+
+.hero-section {
+  margin-top: 169px;
+}
+
+.hero-title {
+  width: 470px;
+  height: 129px;
+  color: #ffffff;
+  font-family: "Uni Neue";
+  font-size: 66px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 70.45px;
+  position: relative;
+}
+
+.hero-title::after {
+  content: "";
+  width: 75px;
+  height: 39px;
+  background-image: url(../img/hero/key.png);
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  right: 94px;
+}
+
+.hero-subtitle {
+  margin-top: 56px;
+  width: 639px;
+  height: 77px;
+  color: #ffffff;
+  font-family: "Uni Neue";
+  font-size: 23px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+}
+
+.hero-buttons {
+  margin-top: 61px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 680px;
+  position: relative;
+  border-style: none;
+  box-shadow: none;
+  border: 2px solid #283034;
+  border-radius: 18px;
+}
+
+.hero-buttons > label > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -999999;
+}
+
+.hero-buttons > input {
+  position: absolute;
+  opacity: 0;
+}
+
+.hero-buttons > label {
+  -moz-transition: 0.2s 0.2s ease-in;
+  -o-transition: 0.2s 0.2s ease-in;
+  -webkit-transition: 0.2s 0.2s ease-in;
+}
+
+.hero-buttons__calculate {
+  width: 321px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  font-family: "Uni Neue";
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18.43px;
+  border-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  border-radius: 18px;
+}
+
+.hero-buttons__calculate_input:checked + label {
+  box-shadow: none;
+  background-color: #fff2f6;
+  color: #071544;
+  width: 354px;
+  z-index: 0;
+}
+
+.hero-buttons__calculate_input:checked + label > a {
+  z-index: 1000;
+}
+
+.hero-buttons__call {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  width: 321px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Uni Neue";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18.43px;
+  text-align: left;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 18px;
+}
+
+.hero-buttons__call_input:checked + label {
+  width: 354px;
+  box-shadow: none;
+  background-color: #fff2f6;
+  color: #071544;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  z-index: 0;
+}
+
+.hero-buttons__call_input:checked + label > a {
+  z-index: 1000;
+}
+
+.hero-icons {
+  margin-top: 153px;
+  max-width: 926px;
+  height: 126px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-icons-icon {
+  display: flex;
+  align-items: center;
+}
+
+.hero-icons-icon__text {
+  color: #fff2f6;
+  font-family: "Uni Neue";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 19px;
+  max-width: 123px;
+}
+
+.hero-icons-icon__text:nth-child(2) {
+  max-width: 130px;
+  white-space: break-spaces;
+}
+
+.webp .hero-title::after { background-image: url(../img/hero/key.webp); }
